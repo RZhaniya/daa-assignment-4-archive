@@ -1,19 +1,19 @@
 using System.Text.Json.Nodes;
 public static class Algorithms {
-// Implement prefix dynamic programming and reconstruct one longest common subsequence. sequence must be a subsequence of both copies and have the optimal length. It need not be contiguous. Any optimal sequence is accepted. Empty copies return length=0 and sequence="". Explain states, transitions, base cases and reconstruction in ANALYSIS.md.
+// Compare two versions of a sequence while preserving the order of shared characters. Implement lcs according to CONTRACTS.md.
 public static JsonObject lcs(JsonObject input)=>throw new NotImplementedException("TODO lcs");
-// A current block represents a closed original interval. Merge adjacent blocks [l,k] and [k+1,r]; pay their combined size and replace them by [l,r]. Return the minimum total cost and a chronological valid plan using original indices. Each input block begins as [i,i]. For n<=1 cost=0 and plan=[]. Any optimal plan is accepted. Greedily choosing the smallest two arbitrary blocks violates adjacency.
+// Plan the cheapest sequence of adjacent block merges when the original order must be preserved. Implement merge according to CONTRACTS.md.
 public static JsonObject merge(JsonObject input)=>throw new NotImplementedException("TODO merge");
-// Implement maximum weight independent set by take/skip tree DP and reconstruct a selected set. The empty set is allowed, so all-negative inputs return weight 0. No adjacent vertices may both be selected. Any optimum is accepted. Root choice must not change the optimum; avoid recursion failure on deep chains.
+// Choose a maximum-value set when neighbouring vertices are incompatible and conflicts form a tree. Implement tree according to CONTRACTS.md.
 public static JsonObject tree(JsonObject input)=>throw new NotImplementedException("TODO tree");
-// Implement naive character comparisons. Return ALL zero-based occurrence starts in strictly increasing order, including overlaps. Empty pattern matches every boundary 0..|text|, including the final boundary. Pattern longer than text returns []. No built-in search functions in the algorithm.
+// Establish a simple exact-search baseline against which the other two searches can be checked. Implement naive according to CONTRACTS.md.
 public static JsonObject naive(JsonObject input)=>throw new NotImplementedException("TODO naive");
-// Implement prefix function and KMP. Use exactly the same matching contract as naive, including the empty pattern. Keep overlaps after a full match using prefix fallback. Compare outputs of all three search algorithms on inputs in their common domain.
+// Reuse information about matched prefixes to avoid restarting the search after every mismatch. Implement kmp according to CONTRACTS.md.
 public static JsonObject kmp(JsonObject input)=>throw new NotImplementedException("TODO kmp");
-// Implement polynomial rolling hash. Use base 31, modulus 101 and ASCII character codes; highest power belongs to the leftmost character. This deliberately small modulus makes collisions testable. Normalize negative remainders. Equal hashes are candidates only: compare actual characters before reporting. The exact matching contract, including empty patterns and overlaps, is shared with KMP. 64-bit arithmetic is sufficient. No built-in search functions.
+// Reject windows with unequal fingerprints and verify every equal-hash candidate. Implement rk according to CONTRACTS.md.
 public static JsonObject rk(JsonObject input)=>throw new NotImplementedException("TODO rk");
-// Implement prefix doubling and Kasai. sa is a permutation of 0..n-1 in lexicographic suffix order. lcp has length n; lcp[0]=0 and lcp[i] compares sa[i-1] with sa[i]. Return any longest substring occurring at two distinct starts; overlaps are allowed. If none exists, repeated="". Empty input has both arrays empty. Do not materialize all suffix strings.
+// Order the text suffixes and use adjacent common prefixes to find repeated substrings. Implement suffix according to CONTRACTS.md.
 public static JsonObject suffix(JsonObject input)=>throw new NotImplementedException("TODO suffix");
-// Build one Aho-Corasick trie/automaton per request, with suffix/failure links. Query it for each independent text; reset state and counts. Count overlaps and suffix-pattern matches. Duplicate patterns are separate dictionary positions and receive equal counts. An empty dictionary produces an empty count row per text. An empty texts array produces []. Do not replace the automaton by multiple KMP searches. Count results using visit propagation along failure links or correct output-link traversal.
+// Build one dictionary automaton and count its patterns in several independent texts. Implement aho according to CONTRACTS.md.
 public static JsonObject aho(JsonObject input)=>throw new NotImplementedException("TODO aho");
 }

@@ -1,11 +1,14 @@
-# Submission record
+# Assignment 4 — submission checklist
 
-Repository URL:
+- Create your own repository using **Use this template → Create a new repository**, then clone it.
+- Set the selected language in submission.json: Java, Python, Cpp or CSharp.
+- Commit selected source, own tests under tests/student and completed English ANALYSIS.md.
+- Run setup, algorithm checks and your own cases; keep actual results.
+- Push and make sure Public checks pass for the submitted commit.
+- Copy the exact commit URL containing its full 40-character SHA.
+- In Moodle Online text submit that URL; an Actions run URL for the same SHA is optional.
+- Give the instructor access to a private repository.
+- Click Submit assignment and verify submission status before the Moodle deadline.
+- If replacing work before the deadline, update the commit URL.
 
-Full 40-character commit SHA:
-
-Selected language (Java/Python/Cpp/CSharp):
-
-Assignment version: 1.0.0
-
-AI/resources disclosure is in ANALYSIS.md. Submit URL and SHA in Moodle, not credentials.
+No binaries, credentials, private grader, hidden tests or official quiz keys. The commit URL identifies the assessed version. Public checks are feedback; the official grade follows the private independent grading process.

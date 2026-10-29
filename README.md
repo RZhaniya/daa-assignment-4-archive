@@ -1,63 +1,34 @@
-# Assignment 4: The Archive Robot and the Corrupted Messages
+# Assignment 4 — Dynamic Programming and String Processing
 
-Version 1.0.0.
+[Interactive lesson and practice](https://rzhaniya.github.io/daa-assignment-4-archive/) · [English specification](docs/Assignment_4_EN.md) · [Русская версия](README_RU.md)
 
-The archive robot has two damaged copies of a message, blocks that cost too much to merge, and a dictionary of phrases that should ring an alarm. It understands exact characters and algorithms. It does not understand why the printer asks for a reboot during every reboot. Help it recover shared content, coordinate a team and index the archive.
+**Course:** Design and Analysis of Algorithms. **Edition:** 2.1.0. **Practical:** 50 points. **Defence:** 50 points. **Deadline:** 8 November 2026, 23:59; Moodle records approved extensions.
 
-## Assessment: exactly 50 + 50
-Each assignment has practical work worth 50 and an individual in-class quiz worth 50. Their sum is the assignment score out of 100. Each assignment contributes 20% of the second attestation; the separate Quiz II and Endterm keep their syllabus weights of 20% and 40%. These new quizzes are part of the assignments, not replacements for Quiz II.
+Implement six parts with eight commands: LCS; ordered adjacent-block merging; maximum-weight independent set on a tree; naive, KMP and exact Rabin–Karp search; suffix array with Kasai LCP; Aho–Corasick. This is a starter template: the algorithm methods are TODOs. Read the specification before coding.
 
-Practical points belong to published requirement groups. Within each group: group points * passed checks / total checks, rounded to 0.01 with half-up rounding. The practical sum is capped at 50. Correct optimum values can earn core points even when a witness is invalid; reconstruction points require a valid optimal witness. Scale groups require correct output on published large input sizes within generous resource limits. A failed build prevents checks from earning points. A timeout loses the affected group checks. An internal checker error produces no grade and must be investigated and rerun.
+## Create your repository
 
-Official checks use the submitted commit and a fixed version of the instructor checker, not your repository's workflow. Additional tests do not change a group's maximum points. Test data may be private, but all tested requirements are published here. Timing medians are for analysis; you are not ranked by milliseconds. The checker records functional correctness and scalability. Black-box tests alone cannot prove which algorithm you used; the stated implementation methods and individual understanding remain required.
+1. Select **Use this template → Create a new repository**. Create your own repository, then clone it to your computer or open it in your development environment. Work in your copy.
+2. Set `language` in `submission.json` to `Java`, `Python`, `Cpp` or `CSharp`. Install Python 3.12+ for the launcher and the selected runtime: JDK 17+, Python 3.12+, C++17 compiler, or .NET 8 SDK.
+3. From the repository root, run `python tools/run.py --setup`. This checks compilation and startup, not the algorithms.
+4. Implement the TODO methods in your chosen language's `source` directory. Preserve the UTF-8 JSON Lines interface. Add your own tests under `tests/student` and complete [ANALYSIS.md](ANALYSIS.md) in English.
+5. Run `python tools/run.py --check`. It checks 44 public cases and a repeated mixed batch. Also test the full published domains, boundary cases and alternative optimal witnesses.
+6. Commit and push your implementation. In **Actions → Public checks**, check the run for that commit. The official template checks startup in all four languages; your copy also runs the algorithm checks. The template's green setup run is not evidence that your TODOs are complete.
 
-## Individual understanding quiz
-20 questions, 2.5 points each, maximum 50; 30 minutes, one individual attempt in class without AI. Questions use small traces, states, invariants, counterexamples, complexity, reconstruction and changed conditions. Every attempt takes one question from each of 20 balanced categories. Four substantive variants per category are available. Single-choice and exact integer numerical answers use no negative marks or guessing penalty. An incorrect answer earns 0 for that question; ordinary automatic quiz marking has no partial credit. Dates are announced in Moodle; unpublished activities stay hidden. Practice quizzes A and B do not affect your grade.
+## Submit in Moodle
 
-## Reconsidering specific quiz errors
-You may ask to reconsider points lost on a particular question. This is optional, not a new compulsory defence. The instructor identifies the skill, gives a new equivalent example and asks you to explain the reasoning. Fully demonstrated understanding restores the points lost on that question; a correct main method with one significant unfinished part restores half of the lost points; otherwise the original score remains. Repeating a published answer without explanation is insufficient. The quiz maximum remains 50. Quiz reconsideration does not automatically change practical points. An erroneous question/key is corrected for all affected students.
+Submit the **exact commit URL with its full 40-character SHA**, plus the chosen language, in [Assignment 4 → Online text](https://lms.astanait.edu.kz/mod/assign/view.php?id=95272). An Actions run URL for the same commit is optional. Give the teacher access if your repository is private. Click **Submit assignment** and verify the final submission status. If you revise before the deadline, update the commit link. Do not upload a ZIP as your submission.
 
-## Copy, run and submit
-Open the official template link in Moodle and select Use this template -> Create a new repository. Choose any repository name. Public or private copies are allowed; if private, provide the instructor with access, or use the authorised local checking route. No payment or private repository is required. Do not fork an instructor checker or copy its private content.
+The submitted commit must include selected source files, `submission.json`, your tests, completed English `ANALYSIS.md` and actual build/run/test commands. Include correctness, reconstruction, complexity and a reproducible comparison of naive/KMP/exact RK. Acknowledge sources and AI assistance, their contribution and your own verification.
 
-Install your chosen runtime: Java JDK 17+, Python 3.12+, C++17 compiler, or .NET SDK 8. The launcher needs Python 3.12+ for all languages, matching Assignment 2. From the repository root run: python tools/run.py --language Java --setup. Replace Java with Python, Cpp or CSharp as appropriate. setup should pass before algorithm implementation. Run python tools/run.py --language Java --check after working on the algorithms; TODO methods intentionally fail their examples. Run a request file with python tools/run.py --language Java --input examples/dsu.jsonl (A3) or examples/lcs.jsonl (A4). Windows may use py -3 in place of python.
+## Learn and prepare
 
-Implement the method bodies in your selected language's source folder. Keep JSON transport separate; it is provided. Add helper classes/functions in that source folder. No external algorithm libraries or built-in substring search may replace required implementations. Standard collections, sorting and priority queues are allowed. C++ targets Linux GCC for official checks; the provided header uses the GCC standard-library convenience header.
+Use the [bilingual lesson](https://rzhaniya.github.io/daa-assignment-4-archive/), eight small interactive models, [Week 8 lecture](https://rzhaniya.github.io/daa-assignment-4-archive/week8/), and the [ungraded 15-question / 25-minute practice](https://rzhaniya.github.io/daa-assignment-4-archive/practice.html). The public learning questions are separate from the assessed Moodle questions. Site source is in `docs/` and is served through GitHub Pages.
 
-Complete ANALYSIS.md with 3-5 sentences per algorithm, three reproducible comparison input sizes, runtime/seed/commands and observations. Explain your states/invariants and reconstruction. This short report supports learning; it has no separate hidden marking group. Record AI tools and other resources used, their contribution, and what you verified. If none, say so. You must understand your submitted implementation; the quiz checks individual understanding. This project does not claim to prevent AI use.
+The [individual English defence](https://lms.astanait.edu.kz/mod/quiz/view.php?id=95271) has **15 questions in 25 minutes**, one attempt: 10 single-answer and 5 multiple-response, three pages of five, free navigation. Read the partial-credit rules in Moodle. All six assignment parts are covered.
 
-Commit the finished source, your own tests, ANALYSIS.md and SUBMISSION.md. Set the selected language in submission.json. In Moodle submit your repository URL, full 40-character commit SHA and selected language. Record the SHA in the Moodle submission rather than making a self-referential commit. The official grade refers to that fixed commit, not a changing branch. Do not submit build binaries, credentials, private grader files or quiz keys. Dates and submission availability are provided in Moodle, not invented in this document.
+## Assessment and contracts
 
-## Resource limits
-Official compilation: 60 seconds. Each requirement group's published batch: 20 seconds, one CPU, 768 MiB container memory (Java heap up to 512 MiB), 128 processes, at most 8 MiB UTF-8 output. Large checks use up to 50000 graph/tree vertices, 100000 DSU operations, 60000 MST edges, 600x600 LCS states, 120 merge blocks, 100001 KMP text characters, 30000 suffix characters, and 600 alarm patterns over two 100000-character texts. These are representative scale checks inside the full published input domains. Small RK tests respect its honest worst-case bounds. Limits apply with headroom; output correctness and asymptotic analysis matter, not a tiny timing difference on shared CI.
+Practical work: 19 marking groups, 50 points. Defence: 50 points. A4 is out of 100 and contributes 20% of the second attestation; Quiz II is separate. Public checks provide feedback; they do not calculate or transfer the official grade. The official grader evaluates the submitted commit.
 
-
-## Practical rubric (50 points)
-
-|Task|Algorithm|Requirement group|Points|
-|---|---|---|---|
-|1|lcs|core|4|
-|1|lcs|witness|2|
-|1|lcs|scale|2|
-|2|merge|core|3|
-|2|merge|witness|2|
-|2|merge|scale|2|
-|3|tree|core|3|
-|3|tree|witness|2|
-|3|tree|scale|2|
-|4|naive|core|2|
-|4|kmp|core|3|
-|4|rk|core|3|
-|4|kmp|scale|2|
-|5|suffix|core|4|
-|5|suffix|witness|3|
-|5|suffix|scale|2|
-|6|aho|core|4|
-|6|aho|edge|3|
-|6|aho|scale|2|
-
-core: optimum values/basic behaviour; edge: published edge cases; witness: feasible optimal reconstruction/condensation; scale: correct large-instance results. Each group has a fixed maximum. The sum is 50.
-
-## Exact task specification
-
-Read CONTRACTS.md and the PDF in docs/. Expected examples are in tests/public.json and examples/.
+[Contracts](CONTRACTS.md) · [Rubric](RUBRIC.md) · [Testing](TESTING.md) · [Submission checklist](SUBMISSION.md) · [Lecture clarifications](docs/LECTURE_CLARIFICATIONS_EN_RU.md)
