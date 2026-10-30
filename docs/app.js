@@ -39,14 +39,8 @@ function render(){
  $('asideNote').textContent=tr('Weeks 8–10 · Eight small models and an ungraded 15-question / 25-minute practice. The assessed defence is in Moodle.','Недели 8–10 · Восемь малых моделей и тренировка: 15 вопросов / 25 минут. Оцениваемая защита — в Moodle.');
  $('eyebrow').textContent=tr('Assignment 4 · Learning studio','Assignment 4 · Учебная мастерская');
  $('title').textContent=s.title[lang];$('lead').textContent=s.lead[lang];$('article').innerHTML=s.body[lang];
- $('downloadsTitle').textContent=tr('Working documents','Рабочие документы');
- $('downloads').innerHTML='<div class="download-links"><a href="https://github.com/RZhaniya/daa-assignment-4-archive/generate">'+esc(tr('Create your repository · Use this template','Создать свой репозиторий · Use this template'))+' ↗</a><a href="https://github.com/RZhaniya/daa-assignment-4-archive">'+esc(tr('Assignment on GitHub','Задание на GitHub'))+' ↗</a>'+[
- ['Assignment_4_'+lang+'.pdf',tr('Specification PDF · '+lang,'Задание PDF · '+lang)],
-
- ['RUBRIC.md',tr('Rubric · EN','Рубрика · EN')],
- ['ANALYSIS.md',tr('Analysis template · EN','Шаблон анализа · EN')],
- ['LECTURE_CLARIFICATIONS_EN_RU.md',tr('Lecture clarifications · EN/RU','Уточнения лекций · EN/RU')]
- ].map(([p,label])=>`<a href="materials/${p}" download>${esc(label)} ↓</a>`).join('')+'</div>';
+ $('downloadsTitle').textContent=tr('Start the assignment','Начать задание');
+ $('downloads').innerHTML='<div class="download-links"><a href="https://github.com/RZhaniya/daa-assignment-4-archive">'+esc(tr('Assignment and instructions','Задание и инструкции'))+' ↗</a><a href="https://github.com/RZhaniya/daa-assignment-4-archive/generate">'+esc(tr('Create your repository','Создать репозиторий'))+' ↗</a></div>';
  const idx=sections.indexOf(s);$('position').textContent=`${idx+1} / ${sections.length}`;
  $('prev').textContent=tr('← Previous','← Назад');$('next').textContent=tr('Next →','Далее →');
  $('prev').disabled=idx===0;$('next').disabled=idx===sections.length-1;

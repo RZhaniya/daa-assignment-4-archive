@@ -1,6 +1,6 @@
 # Assignment 4 — Dynamic Programming and String Processing
 
-[Interactive lesson and practice](https://rzhaniya.github.io/daa-assignment-4-archive/) · [English specification](docs/Assignment_4_EN.md) · [Русская версия](README_RU.md)
+[Interactive lesson and practice](https://rzhaniya.github.io/daa-assignment-4-archive/) · [English specification](docs/Assignment_4_EN.md) · [Русская версия](docs/README_RU.md)
 
 **Course:** Design and Analysis of Algorithms. **Edition:** 2.1.0. **Practical:** 50 points. **Defence:** 50 points. **Availability:** 29 October–8 November 2026, 23:59, for both practical work and defence; Moodle records approved extensions.
 
@@ -43,4 +43,9 @@ Practical work: 19 marking groups, 50 points. Defence: 50 points. A4 is out of 1
 | Aho–Corasick | 9 |
 | **Total** | **50** |
 
-[Contracts](CONTRACTS.md) · [Rubric](RUBRIC.md) · [Testing](TESTING.md) · [Submission checklist](SUBMISSION.md) · [Lecture clarifications](docs/LECTURE_CLARIFICATIONS_EN_RU.md)
+<details>
+<summary>Detailed reference</summary>
+
+[Contracts](docs/guide/CONTRACTS.md) · [Rubric](docs/guide/RUBRIC.md) · [Testing](docs/guide/TESTING.md) · [Submission checklist](docs/guide/SUBMISSION.md) · [Lecture clarifications](docs/LECTURE_CLARIFICATIONS_EN_RU.md)
+
+</details>

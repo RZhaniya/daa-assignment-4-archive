@@ -282,7 +282,7 @@ he is a suffix of she and is counted too. The repeated text starts with fresh co
 
 ## Assessment and defence
 
-Practical work is worth 50 points from independent automated requirement-group checks. The defence is a separate 50-point individual quiz. The required methods, analysis, own tests and benchmark are learning deliverables with no separate hidden manual points or discretionary score deductions. Result tests cannot prove the internal algorithm or authorship; the defence checks individual understanding. See RUBRIC.md for group weights and correction rules.
+Practical work is worth 50 points from independent automated requirement-group checks. The defence is a separate 50-point individual quiz. The required methods, analysis, own tests and benchmark are learning deliverables with no separate hidden manual points or discretionary score deductions. Result tests cannot prove the internal algorithm or authorship; the defence checks individual understanding. See [RUBRIC.md](guide/RUBRIC.md) for group weights and correction rules.
 
 The English defence contains 15 questions in 25 minutes, one attempt: 10 single-answer questions with four options each and 5 multiple-response questions with five options each. Each question has a raw maximum of 1; the quiz grade is raw/15×50. A correct single answer earns 1; a wrong or blank answer earns 0. The questions apply the methods to short new cases: explaining a transition, checking a witness, finding a counterexample, diagnosing an incorrect implementation, or interpreting complexity.
 
