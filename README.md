@@ -2,7 +2,7 @@
 
 [Interactive lesson and practice](https://rzhaniya.github.io/daa-assignment-4-archive/) · [English specification](docs/Assignment_4_EN.md) · [Русская версия](docs/README_RU.md)
 
-**Course:** Design and Analysis of Algorithms. **Edition:** 2.1.0. **Practical:** 50 points. **Defence:** 50 points. **Availability:** 29 October–8 November 2026, 23:59, for both practical work and defence; Moodle records approved extensions.
+**Course:** Design and Analysis of Algorithms. **Practical:** 50 points. **Defence:** 50 points. **Availability:** 29 October–8 November 2026, 23:59, for both practical work and defence; Moodle records approved extensions.
 
 Implement six parts with eight commands: LCS; ordered adjacent-block merging; maximum-weight independent set on a tree; naive, KMP and exact Rabin–Karp search; suffix array with Kasai LCP; Aho–Corasick. The work covers syllabus weeks 8–10. This is a starter template: the algorithm methods are TODOs. Read the specification before coding.
 
@@ -13,7 +13,7 @@ Implement six parts with eight commands: LCS; ordered adjacent-block merging; ma
 3. From the repository root, run `python tools/run.py --setup`. This checks compilation and startup, not the algorithms.
 4. Implement the TODO methods in your chosen language's `source` directory. Preserve the UTF-8 JSON Lines interface. Add your own tests under `tests/student` and complete [ANALYSIS.md](ANALYSIS.md) in English.
 5. Run `python tools/run.py --check`. It checks 44 public cases and a repeated mixed batch. Also test the full published domains, boundary cases and alternative optimal witnesses.
-6. Commit and push your implementation. In **Actions → Public checks**, check the run for that commit. The official template checks startup in all four languages; your copy also runs the algorithm checks. The template's green setup run is not evidence that your TODOs are complete.
+6. Commit and push your implementation. In **Actions → Public checks**, check the run for that commit. The official template checks startup in all four languages; your copy also runs the algorithm checks.
 
 ## Submit in Moodle
 
@@ -23,15 +23,15 @@ The submitted commit must include selected source files, `submission.json`, your
 
 ## Learn and prepare
 
-Use the [bilingual lesson](https://rzhaniya.github.io/daa-assignment-4-archive/), eight small interactive models, [Week 8 lecture](https://rzhaniya.github.io/daa-assignment-4-archive/week8/), and the [ungraded 15-question / 25-minute practice](https://rzhaniya.github.io/daa-assignment-4-archive/practice.html). The public learning questions are separate from the assessed Moodle questions. Site source is in `docs/` and is served through GitHub Pages.
+Use the [bilingual lesson](https://rzhaniya.github.io/daa-assignment-4-archive/), eight small interactive models, [Week 8 lecture](https://rzhaniya.github.io/daa-assignment-4-archive/week8/), and the [ungraded 15-question / 25-minute practice](https://rzhaniya.github.io/daa-assignment-4-archive/practice.html). The public learning questions are separate from the assessed Moodle questions.
 
 The [individual English defence](https://lms.astanait.edu.kz/mod/quiz/view.php?id=95271) has **15 questions in 25 minutes**, one attempt: 10 single-answer and 5 multiple-response, three pages of five, free navigation. All six assignment parts are covered. Work independently without AI or external assistance during the defence.
 
-Each question is worth 1 raw point; quiz grade = raw/15 × 50. A single-answer question earns 1 for a correct answer and 0 for a wrong or blank answer. For a multiple-response question with k correct options (2 or 3), each selected correct option earns 1/k and each selected wrong option deducts 1/(2k), with a floor of zero per question. Selecting all five earns 0.25 for k=2 or about 0.67 for k=3. Full credit requires every correct option and no wrong selections. Follow the saved quiz instructions and approved accommodations in Moodle.
+Each question is worth 1 raw point; quiz grade = raw/15 × 50. A single-answer question earns 1 for a correct answer and 0 for a wrong or blank answer. For a multiple-response question with k correct options (2 or 3), each selected correct option earns 1/k and each selected wrong option deducts 1/(2k), with a floor of zero per question. Selecting all five earns 0.25 for k=2 or about 0.67 for k=3. Full credit requires every correct option and no wrong selections. Follow the quiz instructions and approved accommodations in Moodle.
 
 ## Assessment and contracts
 
-Practical work: 19 marking groups, 50 points. Defence: 50 points. A4 is out of 100 and contributes 20% of the second attestation; Quiz II is separate. Public checks provide feedback; they do not calculate or transfer the official grade. The official grader evaluates the submitted commit. Alternative optimal witnesses are accepted wherever reconstruction is non-unique. The rubric defines the 19 marking groups, required output schemas and partial credit.
+Practical work: 19 marking groups, 50 points. Defence: 50 points. A4 is out of 100 and contributes 20% of the second attestation; Quiz II is separate. The practical mark is calculated from the submitted commit using the rubric. Alternative optimal witnesses are accepted wherever reconstruction is non-unique. The rubric defines the 19 marking groups, required output schemas and partial credit.
 
 | Practical part | Points |
 |---|---:|
@@ -46,6 +46,6 @@ Practical work: 19 marking groups, 50 points. Defence: 50 points. A4 is out of 1
 <details>
 <summary>Detailed reference</summary>
 
-[Contracts](docs/guide/CONTRACTS.md) · [Rubric](docs/guide/RUBRIC.md) · [Testing](docs/guide/TESTING.md) · [Submission checklist](docs/guide/SUBMISSION.md) · [Lecture clarifications](docs/LECTURE_CLARIFICATIONS_EN_RU.md)
+[Contracts](docs/guide/CONTRACTS.md) · [Rubric](docs/guide/RUBRIC.md) · [Testing](docs/guide/TESTING.md) · [Submission checklist](docs/guide/SUBMISSION.md) · [Algorithm notes](docs/LECTURE_CLARIFICATIONS_EN_RU.md)
 
 </details>

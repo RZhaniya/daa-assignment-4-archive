@@ -2,7 +2,7 @@
 
 ## Environment and commands
 
-Selected language/runtime version; OS/CPU/RAM; build/run/test commands. Record the final assessed commit in Moodle; do not attempt to embed a commit's own SHA inside itself. Report actual measurements only.
+Selected language/runtime version; OS/CPU/RAM; build/run/test commands. Record the final commit URL in Moodle. Report actual measurements only.
 
 ## Algorithm explanations
 

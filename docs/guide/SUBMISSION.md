@@ -11,4 +11,4 @@
 - Click Submit assignment and verify submission status before the Moodle deadline.
 - If replacing work before the deadline, update the commit URL.
 
-No binaries, credentials, private grader, hidden tests or official quiz keys. The commit URL identifies the assessed version. Public checks are feedback; the official grade follows the private independent grading process.
+Exclude build outputs and credentials. The submitted commit identifies the work to be assessed.

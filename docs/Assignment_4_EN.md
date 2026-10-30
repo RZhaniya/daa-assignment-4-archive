@@ -1,10 +1,8 @@
 # Assignment 4 — Dynamic Programming and String Processing
 
-Edition 2.1.0. Use this GitHub template for your implementation; submit the exact commit link in Moodle.
+**Course:** Design and Analysis of Algorithms. **Assessment:** practical work 50 + individual defence quiz 50 = 100; Assignment 4 contributes 20% of the second attestation. Quiz II is a separate assessment. **Deadline:** 8 November 2026, 23:59; approved extensions are recorded in Moodle.
 
-**Course:** Design and Analysis of Algorithms. **Assessment:** practical work 50 + individual defence quiz 50 = 100; Assignment 4 contributes 20% of the second attestation. Quiz II is a separate assessment. **Deadline:** as announced in Moodle.
-
-## 1. Objective and syllabus scope
+## 1. Task
 
 Implement six parts with eight request commands: LCS, ordered merging, tree selection, three single-pattern searches, suffix indexing and dictionary matching. They are independent modules for sequence comparison, planning and text processing; they do not share application state.
 
@@ -18,7 +16,7 @@ Keep the supplied UTF-8 JSON Lines interface: one request object per input line 
 
 All character positions, block indices and vertex IDs are zero-based. Required numeric fields in the input/output are integers, not JSON Booleans or fractional numbers. Costs, total weights and occurrence counts must be represented exactly with signed 64-bit-safe integer arithmetic; Python integers are suitable. Preserve input array order where it defines output positions. JSON object-field order is unrestricted. Inputs satisfy the published domain; malformed JSON is not assessed. A different valid optimum is accepted wherever reconstruction is non-unique.
 
-The field signatures below use type notation; the worked examples show literal valid JSON. Each output must contain the required named fields with their stated types, even when only an optimum-value group is being checked. Extra object fields are ignored by the current validators; they are not required.
+The field signatures below use type notation; the worked examples show literal valid JSON. Each output must contain the required named fields with their stated types, even when only an optimum-value group is being checked. Additional object fields are ignored; they are optional.
 
 Complexity bounds concern the algorithm after JSON parsing. Report auxiliary storage separately from input/output storage. For string search n is text length, m is pattern length and z is the number of returned starts; emitting z positions requires at least z output operations. Handle empty inputs explicitly.
 
@@ -282,13 +280,13 @@ he is a suffix of she and is counted too. The repeated text starts with fresh co
 
 ## Assessment and defence
 
-Practical work is worth 50 points from independent automated requirement-group checks. The defence is a separate 50-point individual quiz. The required methods, analysis, own tests and benchmark are learning deliverables with no separate hidden manual points or discretionary score deductions. Result tests cannot prove the internal algorithm or authorship; the defence checks individual understanding. See [RUBRIC.md](guide/RUBRIC.md) for group weights and correction rules.
+The practical mark is calculated from the 19 groups in the rubric, up to 50 points. Implement the required methods and submit the English analysis, own tests and search comparison; these are required deliverables without separate points. The individual defence is worth 50 points. See [RUBRIC.md](guide/RUBRIC.md) for the marking rules.
 
 The English defence contains 15 questions in 25 minutes, one attempt: 10 single-answer questions with four options each and 5 multiple-response questions with five options each. Each question has a raw maximum of 1; the quiz grade is raw/15×50. A correct single answer earns 1; a wrong or blank answer earns 0. The questions apply the methods to short new cases: explaining a transition, checking a witness, finding a counterexample, diagnosing an incorrect implementation, or interpreting complexity.
 
-For a multiple-response question with k correct options (k=2 or 3), every selected correct option earns 1/k and every selected wrong option deducts 1/(2k). Sum the selected weights and floor at 0. With two correct options: +0.50/−0.25. With three: +1/3/−1/6. Selecting all five options therefore earns 0.25 or approximately 0.67 respectively; full credit requires exactly all correct options. This partial-credit policy follows the latest A3 format and is a course assignment rule. It is not specified by the syllabus. No individual oral score recovery is included. A defective question/key or test is corrected consistently for all affected work under course rules.
+For a multiple-response question with k correct options (k=2 or 3), every selected correct option earns 1/k and every selected wrong option deducts 1/(2k). Sum the selected weights and floor at 0. With two correct options: +0.50/−0.25. With three: +1/3/−1/6. Selecting all five options therefore earns 0.25 or approximately 0.67 respectively; full credit requires exactly all correct options. There is no individual oral reassessment of the defence. A defective question/key or test is corrected consistently for all affected work under course rules.
 
-Work independently during the quiz, without AI or external help. Follow the quiz instructions and accommodations approved by the course. There are three pages of five questions with free navigation. Dates, access and answer-release settings are announced in Moodle. Question keys are not part of the public assignment package.
+Work independently during the quiz, without AI or external help. Follow the quiz instructions and accommodations approved by the course. There are three pages of five questions with free navigation. Dates, access and answer-release settings are announced in Moodle.
 
 ## Analysis, testing and comparison
 
@@ -298,7 +296,7 @@ Compare naive/KMP/RK on identical text/pattern pairs at three increasing sizes w
 
 ## Build, check and submit
 
-Start from the official A4 template linked in Moodle. Select one language in submission.json. Implement the corresponding source methods; preserve the provided transport. The documented launcher in the existing A4 template is:
+Create your repository from the [A4 template](https://github.com/RZhaniya/daa-assignment-4-archive). Select a language in submission.json, implement its source methods and preserve the JSON Lines interface. Run from the repository root:
 
 ```sh
 python tools/run.py --language Java --setup
@@ -306,14 +304,14 @@ python tools/run.py --language Java --check
 python tools/run.py --language Java --input examples/lcs.jsonl
 ```
 
-Replace Java with Python, Cpp or CSharp. The launcher requires Python 3.12+ even for another implementation language. Windows may use py -3. Omit --language to use submission.json. setup checks launch; TODO algorithm bodies are intentionally incomplete. Public checks contain 44 cases and repeat the complete batch twice in one process to check state reset. Passing setup alone does not test your algorithm results.
+Replace Java with Python, Cpp or CSharp. The launcher requires Python 3.12+ even for another implementation language. Windows may use py -3. Omit --language to use submission.json. setup checks compilation and startup. Implement the TODO methods before running check. Public checks contain 44 cases and repeat the complete batch twice in one process to check state reset. Passing setup alone does not test your algorithm results.
 
-Commit your selected source, submission.json, own tests under tests/student, completed English ANALYSIS.md and submission notes. Run local/public checks; the submitted implementation must pass public checks. In Moodle Online text submit the exact commit URL, optionally an Actions run URL for the same commit, then click Submit assignment and verify the status. The commit URL contains the complete 40-character SHA and identifies the assessed version. Give the instructor access to a private repository. Follow the Moodle deadline and any approved extension. Public checks provide feedback; they do not calculate or transfer the official practical grade.
+Commit your selected source, submission.json, own tests under tests/student, completed English ANALYSIS.md and submission notes. Run local/public checks; the submitted implementation must pass public checks. In Moodle Online text submit the exact commit URL, optionally an Actions run URL for the same commit, then click Submit assignment and verify the status. The commit URL contains the complete 40-character SHA and identifies the assessed version. Give the instructor access to a private repository. Follow the Moodle deadline and any approved extension.
 
 Official isolated checks allow 60 seconds for compilation and 20 seconds per requirement-group batch, 1 CPU, 768 MiB container memory (Java heap≤512 MiB),128 processes and at most 8 MiB UTF-8 output. Each group runs as one JSONL batch. A process failure, timeout, or invalid/missing result line can fail the entire batch; a well-formed but wrong result affects its own case. The solution must support the full input domains above; public examples alone do not establish that. Timing medians do not determine a ranking.
 
 ## Academic integrity and resources
 
-Follow the syllabus. Acknowledge external sources and AI tools in ANALYSIS.md: contribution, material used and your own verification; state if none were used. Take responsibility for correctness, originality and quality. Written style alone does not establish misconduct.
+Follow the syllabus. Acknowledge external sources and AI tools in ANALYSIS.md: contribution, material used and your own verification; state if none were used. Take responsibility for correctness, originality and quality.
 
-Use syllabus weeks 8–10 and lecture 8 (DP patterns), lecture 9 file (KMP/hash) and lecture 10 file (suffix/Kasai/Aho). Read LECTURE_CLARIFICATIONS_EN_RU.md for notation, collision, sentinel and complexity conventions. Required algorithmic methods are those explicitly listed above; no advanced DP optimization or linear-time suffix construction is required. Input-domain limits above define what the solution must support.
+Use syllabus weeks 8–10 and lecture 8 (DP patterns), lecture 9 file (KMP/hash) and lecture 10 file (suffix/Kasai/Aho). See [algorithm notes](LECTURE_CLARIFICATIONS_EN_RU.md) for indexing, collisions, sentinels and complexity. Required algorithmic methods are those explicitly listed above; no advanced DP optimization or linear-time suffix construction is required. Input-domain limits above define what the solution must support.

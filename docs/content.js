@@ -2,24 +2,24 @@ window.A4_SECTIONS=[
   {
     "id": "start",
     "title": {
-      "EN": "Your route through A4",
-      "RU": "Маршрут по A4"
+      "EN": "Assignment 4",
+      "RU": "Задание 4"
     },
     "lead": {
-      "EN": "Compare sequences. Plan decisions. Search text. Explain why the result is correct.",
-      "RU": "Сравнивайте последовательности, планируйте решения, ищите в тексте — и объясняйте корректность результата."
+      "EN": "Dynamic programming and string processing.",
+      "RU": "Динамическое программирование и обработка строк."
     },
     "body": {
-      "EN": "<p>Six parts connect the three final syllabus weeks: dynamic programming, one-pattern search, suffix indexing and dictionary matching. Work through a small example before implementing each method.</p><div class=\"metrics\"><div><strong>6</strong><span>parts · 8 commands</span></div><div><strong>50 + 50</strong><span>practice + defence</span></div><div><strong>15 / 25</strong><span>questions / minutes</span></div></div><h2>Work in this order</h2><ol><li>Read the specification and test the supplied launcher.</li><li>Understand states, updates and boundaries with these small models.</li><li>Implement one module; test its result and reconstruction.</li><li>Compare the three searches on reproducible inputs.</li><li>Submit the exact commit and prepare for the individual defence.</li></ol><p>The site currently contains eight small interactive models. An ungraded 15-question practice is available in the defence chapter. Create your own repository with <a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template</a> on GitHub. The assessed defence is a separate Moodle activity.</p>",
-      "RU": "<p>Шесть частей объединяют три последние недели силлабуса: DP, поиск одного шаблона, суффиксный индекс и поиск словаря. Сначала разберите небольшой пример, затем реализуйте метод.</p><div class=\"metrics\"><div><strong>6</strong><span>частей · 8 команд</span></div><div><strong>50 + 50</strong><span>практика + защита</span></div><div><strong>15 / 25</strong><span>вопросов / минут</span></div></div><h2>Порядок работы</h2><ol><li>Прочитайте задание и проверьте запуск шаблона.</li><li>Разберите состояния, переходы и границы на моделях.</li><li>Реализуйте один модуль; проверьте результат и восстановление.</li><li>Сравните три поиска на воспроизводимых входах.</li><li>Сдайте точный коммит и подготовьтесь к индивидуальной защите.</li></ol><p>Сейчас на сайте восемь малых интерактивных моделей. Тренировка из 15 вопросов доступна в разделе защиты. Создайте свой репозиторий через <a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template</a> на GitHub. Оцениваемая защита проходит отдельно в Moodle.</p>"
+      "EN": "<p>Assignment 4 covers topics from weeks 8–10: dynamic programming, one-pattern search, suffix indexing and dictionary matching. Work through a small example before implementing each method.</p><div class=\"metrics\"><div><strong>6</strong><span>parts · 8 commands</span></div><div><strong>50 + 50</strong><span>practice + defence</span></div><div><strong>15 / 25</strong><span>questions / minutes</span></div></div><h2>Work in this order</h2><ol><li>Read the specification and test the supplied launcher.</li><li>Understand states, updates and boundaries with these small models.</li><li>Implement one module; test its result and reconstruction.</li><li>Compare the three searches on reproducible inputs.</li><li>Submit the exact commit and prepare for the individual defence.</li></ol><p>Use the eight interactive examples to prepare. An ungraded 15-question practice is available in the defence chapter. Create your own repository with <a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template</a> on GitHub. The assessed defence is a separate Moodle activity.</p>",
+      "RU": "<p>Задание охватывает темы недель 8–10: DP, поиск одного шаблона, суффиксный индекс и поиск словаря. Сначала разберите небольшой пример, затем реализуйте метод.</p><div class=\"metrics\"><div><strong>6</strong><span>частей · 8 команд</span></div><div><strong>50 + 50</strong><span>практика + защита</span></div><div><strong>15 / 25</strong><span>вопросов / минут</span></div></div><h2>Порядок работы</h2><ol><li>Прочитайте задание и проверьте запуск шаблона.</li><li>Разберите состояния, переходы и границы на моделях.</li><li>Реализуйте один модуль; проверьте результат и восстановление.</li><li>Сравните три поиска на воспроизводимых входах.</li><li>Сдайте точный коммит и подготовьтесь к индивидуальной защите.</li></ol><p>Для подготовки разберите восемь интерактивных примеров. Тренировка из 15 вопросов доступна в разделе защиты. Создайте свой репозиторий через <a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template</a> на GitHub. Оцениваемая защита проходит отдельно в Moodle.</p>"
     },
     "lab": null
   },
   {
     "id": "foundations",
     "title": {
-      "EN": "A state, a transition, a reason",
-      "RU": "Состояние, переход, обоснование"
+      "EN": "Dynamic programming",
+      "RU": "Динамическое программирование"
     },
     "lead": {
       "EN": "DP remembers the answer to a precisely defined smaller problem.",
@@ -34,8 +34,8 @@ window.A4_SECTIONS=[
   {
     "id": "lcs",
     "title": {
-      "EN": "Compare two sequences",
-      "RU": "Сравнение последовательностей"
+      "EN": "Longest common subsequence",
+      "RU": "Наибольшая общая подпоследовательность"
     },
     "lead": {
       "EN": "Keep character order; gaps are allowed.",
@@ -50,8 +50,8 @@ window.A4_SECTIONS=[
   {
     "id": "merge",
     "title": {
-      "EN": "Choose the last split",
-      "RU": "Выбор последнего разделения"
+      "EN": "Merging adjacent blocks",
+      "RU": "Слияние соседних блоков"
     },
     "lead": {
       "EN": "Only neighbouring blocks can be merged.",
@@ -66,8 +66,8 @@ window.A4_SECTIONS=[
   {
     "id": "tree",
     "title": {
-      "EN": "Take or skip a vertex",
-      "RU": "Взять или пропустить вершину"
+      "EN": "Independent set on a tree",
+      "RU": "Независимое множество в дереве"
     },
     "lead": {
       "EN": "A chosen vertex excludes its neighbours.",
@@ -82,8 +82,8 @@ window.A4_SECTIONS=[
   {
     "id": "naive",
     "title": {
-      "EN": "Start with exact matches",
-      "RU": "Сначала — точные совпадения"
+      "EN": "Naive string search",
+      "RU": "Наивный поиск"
     },
     "lead": {
       "EN": "A simple baseline makes stronger implementations easier to check.",
@@ -98,12 +98,12 @@ window.A4_SECTIONS=[
   {
     "id": "kmp",
     "title": {
-      "EN": "Reuse a matching prefix",
-      "RU": "Используйте совпавший префикс"
+      "EN": "Knuth–Morris–Pratt algorithm",
+      "RU": "Алгоритм Кнута–Морриса–Пратта"
     },
     "lead": {
-      "EN": "A mismatch does not erase everything you already know.",
-      "RU": "Несовпадение не отменяет всё, что уже известно."
+      "EN": "Use the prefix function to continue the search after a mismatch.",
+      "RU": "Префикс-функция позволяет продолжить поиск после несовпадения."
     },
     "body": {
       "EN": "<p><code>pi[i]</code> is the length of the longest proper prefix of pattern[0…i] that is also its suffix. On mismatch, j falls back to pi[j−1]. The text index does not move backwards.</p><p>After a full match use the same prefix fallback to preserve overlaps. Handle the empty pattern before indexing it.</p><p><strong>Cost:</strong> O(n+m+answers+1) time; O(m+1) auxiliary and O(answers+1) output memory.</p>",
@@ -114,8 +114,8 @@ window.A4_SECTIONS=[
   {
     "id": "rk",
     "title": {
-      "EN": "A fingerprint is a candidate",
-      "RU": "Хеш указывает на кандидата"
+      "EN": "Rabin–Karp algorithm",
+      "RU": "Алгоритм Рабина–Карпа"
     },
     "lead": {
       "EN": "Equal hashes still need a character comparison.",
@@ -130,8 +130,8 @@ window.A4_SECTIONS=[
   {
     "id": "suffix",
     "title": {
-      "EN": "Order suffixes, find repeats",
-      "RU": "Упорядочьте суффиксы и найдите повторы"
+      "EN": "Suffix array and LCP",
+      "RU": "Суффиксный массив и LCP"
     },
     "lead": {
       "EN": "The longest repeat appears as a common prefix of neighbouring suffixes.",
@@ -146,8 +146,8 @@ window.A4_SECTIONS=[
   {
     "id": "aho",
     "title": {
-      "EN": "Match a whole dictionary",
-      "RU": "Поиск всего словаря"
+      "EN": "Aho–Corasick algorithm",
+      "RU": "Алгоритм Ахо–Корасик"
     },
     "lead": {
       "EN": "One automaton, overlapping matches, fresh counts for every text.",
@@ -162,64 +162,64 @@ window.A4_SECTIONS=[
   {
     "id": "testing",
     "title": {
-      "EN": "Test a claim before timing it",
-      "RU": "Проверьте ответ до измерения времени"
+      "EN": "Testing and comparison",
+      "RU": "Тестирование и сравнение"
     },
     "lead": {
       "EN": "Correctness first. Measurements explain behaviour.",
       "RU": "Сначала корректность. Измерения помогают объяснить поведение."
     },
     "body": {
-      "EN": "<p>Use small independently solved inputs and tests aimed at a specific defect: substring instead of subsequence, illegal adjacency, missed overlaps, hash collision, sentinel leakage, suffix patterns and stale counts.</p><p>For the search comparison choose the same input pairs at three increasing sizes in the common domain (both lengths≤3000). Record generator/seed, runtime, hardware, commands, timing boundary and warm-up. Measure at least three runs and report medians; exclude compilation. Separate random and repetitive cases.</p><p>Public checks are feedback, not an official grade. A black-box test cannot prove which internal algorithm you used. Report only runs and timings you actually performed.</p>",
-      "RU": "<p>Используйте малые независимо решённые входы и тесты конкретных ошибок: подстрока вместо подпоследовательности, нарушение смежности, потеря перекрытий, коллизия, лишний sentinel, шаблон-суффикс и старые счётчики.</p><p>Для сравнения поиска нужны одинаковые пары трёх возрастающих размеров в общем диапазоне (обе длины≤3000). Запишите генератор/seed, runtime, оборудование, команды, границу замера и прогрев. Минимум три измерения и медиана; компиляция исключается. Random и repetitive cases рассмотрите отдельно.</p><p>Public checks дают обратную связь, а не официальную оценку. Чёрный ящик не доказывает внутренний алгоритм. Указывайте только реально выполненные запуски и замеры.</p>"
+      "EN": "<p>Use small independently solved inputs and tests aimed at a specific defect: substring instead of subsequence, illegal adjacency, missed overlaps, hash collision, sentinel leakage, suffix patterns and stale counts.</p><p>For the search comparison choose the same input pairs at three increasing sizes in the common domain (both lengths≤3000). Record generator/seed, runtime, hardware, commands, timing boundary and warm-up. Measure at least three runs and report medians; exclude compilation. Separate random and repetitive cases.</p><p>Record the inputs, expected and actual results, and measured timings in ANALYSIS.md.</p>",
+      "RU": "<p>Используйте малые независимо решённые входы и тесты конкретных ошибок: подстрока вместо подпоследовательности, нарушение смежности, потеря перекрытий, коллизия, лишний sentinel, шаблон-суффикс и старые счётчики.</p><p>Для сравнения поиска нужны одинаковые пары трёх возрастающих размеров в общем диапазоне (обе длины≤3000). Запишите генератор/seed, runtime, оборудование, команды, границу замера и прогрев. Минимум три измерения и медиана; компиляция исключается. Random и repetitive cases рассмотрите отдельно.</p><p>Запишите в ANALYSIS.md входы, ожидаемые и фактические результаты, реальные замеры времени.</p>"
     },
     "lab": null
   },
   {
     "id": "defence",
     "title": {
-      "EN": "Prepare for 15 questions",
-      "RU": "Подготовка к 15 вопросам"
+      "EN": "Defence preparation",
+      "RU": "Подготовка к защите"
     },
     "lead": {
-      "EN": "Twenty-five minutes, one attempt, individual understanding.",
-      "RU": "Двадцать пять минут, одна попытка, самостоятельное понимание."
+      "EN": "15 questions, 25 minutes, one attempt.",
+      "RU": "15 вопросов, 25 минут, одна попытка."
     },
     "body": {
-      "EN": "<p>The English defence has 10 single-answer and 5 multiple-response questions. Each is worth 1 raw point; grade = raw/15 × 50. There are three pages of five questions with free navigation. Work independently without AI or external assistance.</p><p>The questions cover all six assignment parts: states and transitions, reconstruction, counterexamples, invariants, correctness and efficiency. Small examples test understanding of your implementation.</p><h2>Multiple-response credit</h2><p>With k correct options (2 or 3), each selected correct option earns 1/k and each selected wrong option deducts 1/(2k), with a floor of zero per question. Selecting all five earns 0.25 for k=2 or about 0.67 for k=3. Full credit requires every correct option and no wrong ones.</p><p><a href=\"practice.html\">Start the ungraded 15-question / 25-minute practice</a>. These are separate public learning examples with explanations, not the questions used in the assessed defence. <a href=\"materials/Practice_15_EN.md\" download>Download the learning paper</a>.</p><p><a href=\"https://lms.astanait.edu.kz/mod/quiz/view.php?id=95271\">Open Assignment 4 - Defence Quiz in Moodle</a>. Availability: 29 October 2026 through 8 November 2026, 23:59. Moodle is authoritative for access and approved extensions.</p>",
-      "RU": "<p>Защита на английском: 10 вопросов с одним ответом и 5 с несколькими верными вариантами. Каждый вопрос даёт до 1 исходного балла; оценка = raw/15 × 50. Три страницы по пять вопросов, свободная навигация. Во время защиты работайте самостоятельно без ИИ и внешней помощи.</p><p>Вопросы охватывают все шесть частей: состояния и переходы, восстановление, контрпримеры, инварианты, корректность и эффективность. Небольшие примеры проверяют понимание вашей реализации.</p><h2>Частичный балл</h2><p>При k верных вариантах (2 или 3) каждая верная отметка даёт 1/k, неверная вычитает 1/(2k). Минимум за вопрос — ноль. Выбор всех пяти даёт 0,25 при k=2 или около 0,67 при k=3. Полный балл требует всех верных без неверных.</p><p><a href=\"practice.html\">Открыть тренировку: 15 вопросов / 25 минут</a>. Это отдельные открытые учебные примеры с объяснениями. Они отличаются от вопросов оцениваемой защиты. <a href=\"materials/Practice_15_EN.md\" download>Скачать учебный вариант</a>.</p><p><a href=\"https://lms.astanait.edu.kz/mod/quiz/view.php?id=95271\">Assignment 4 - Defence Quiz в Moodle</a>. Доступ: с 29 октября по 8 ноября 2026 включительно, до 23:59. Доступность и продления определяются в Moodle.</p>"
+      "EN": "<p>The English defence has 10 single-answer and 5 multiple-response questions. Each is worth 1 raw point; grade = raw/15 × 50. There are three pages of five questions with free navigation. Work independently without AI or external assistance.</p><p>The questions cover all six assignment parts: states and transitions, reconstruction, counterexamples, invariants, correctness and efficiency. Small examples test understanding of your implementation.</p><h2>Multiple-response credit</h2><p>With k correct options (2 or 3), each selected correct option earns 1/k and each selected wrong option deducts 1/(2k), with a floor of zero per question. Selecting all five earns 0.25 for k=2 or about 0.67 for k=3. Full credit requires every correct option and no wrong ones.</p><p><a href=\"practice.html\">Start the ungraded 15-question / 25-minute practice</a>. Answers and explanations are available after the practice attempt. <a href=\"materials/Practice_15_EN.md\" download>Download the learning paper</a>.</p><p><a href=\"https://lms.astanait.edu.kz/mod/quiz/view.php?id=95271\">Open Assignment 4 - Defence Quiz in Moodle</a>. Availability: 29 October 2026 through 8 November 2026, 23:59. Moodle is authoritative for access and approved extensions.</p>",
+      "RU": "<p>Защита на английском: 10 вопросов с одним ответом и 5 с несколькими верными вариантами. Каждый вопрос даёт до 1 исходного балла; оценка = raw/15 × 50. Три страницы по пять вопросов, свободная навигация. Во время защиты работайте самостоятельно без ИИ и внешней помощи.</p><p>Вопросы охватывают все шесть частей: состояния и переходы, восстановление, контрпримеры, инварианты, корректность и эффективность. Небольшие примеры проверяют понимание вашей реализации.</p><h2>Частичный балл</h2><p>При k верных вариантах (2 или 3) каждая верная отметка даёт 1/k, неверная вычитает 1/(2k). Минимум за вопрос — ноль. Выбор всех пяти даёт 0,25 при k=2 или около 0,67 при k=3. Полный балл требует всех верных без неверных.</p><p><a href=\"practice.html\">Открыть тренировку: 15 вопросов / 25 минут</a>. После тренировки доступны ответы и объяснения. <a href=\"materials/Practice_15_EN.md\" download>Скачать учебный вариант</a>.</p><p><a href=\"https://lms.astanait.edu.kz/mod/quiz/view.php?id=95271\">Assignment 4 - Defence Quiz в Moodle</a>. Доступ: с 29 октября по 8 ноября 2026 включительно, до 23:59. Доступность и продления определяются в Moodle.</p>"
     },
     "lab": null
   },
   {
     "id": "submit",
     "title": {
-      "EN": "Submit an exact version",
-      "RU": "Сдайте точную версию"
+      "EN": "Submit your work",
+      "RU": "Сдача работы"
     },
     "lead": {
-      "EN": "Your commit identifies the work being assessed.",
-      "RU": "Коммит определяет оцениваемую работу."
+      "EN": "Submit the commit URL in Moodle by 8 November, 23:59.",
+      "RU": "Сдайте ссылку на коммит в Moodle до 8 ноября, 23:59."
     },
     "body": {
-      "EN": "<p><a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template → Create a new repository</a>, then clone your copy.</p><ol><li>Choose a language in submission.json.</li><li>Commit your source, own tests and English ANALYSIS.md.</li><li>Run local checks and successful Public checks.</li><li>Submit the exact commit URL in Moodle Online text. An Actions run URL is optional.</li><li>Provide private-repository access, click Submit assignment and verify the status.</li></ol><p>Dates and approved extensions follow Moodle. A public workflow does not transfer the practical grade. Acknowledge sources and AI assistance, their contribution and your verification.</p><p><a href=\"https://lms.astanait.edu.kz/mod/assign/view.php?id=95272\">Submit Assignment 4 in Moodle</a>. Opens 29 October 2026; deadline and cutoff 8 November 2026, 23:59. Practical 50 + defence 50 = 100; A4 contributes 20% of the second attestation. Quiz 2 is separate.</p>",
-      "RU": "<p><a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template → Create a new repository</a>, затем клонируйте свою копию.</p><ol><li>Выберите язык в submission.json.</li><li>Добавьте исходники, собственные тесты и английский ANALYSIS.md в коммит.</li><li>Выполните локальные проверки и добейтесь успешных Public checks.</li><li>Сдайте ссылку точного коммита в Moodle Online text. Actions run URL — по желанию.</li><li>Откройте доступ к private repository, нажмите Submit assignment и проверьте статус.</li></ol><p>Даты и продления — в Moodle. Публичный workflow не переносит оценку практики. Укажите источники и ИИ, их вклад и свою проверку.</p><p><a href=\"https://lms.astanait.edu.kz/mod/assign/view.php?id=95272\">Сдать Assignment 4 в Moodle</a>. Начало 29 октября 2026; дедлайн и окончание приёма — 8 ноября 2026, 23:59. Практика 50 + защита 50 = 100; A4 даёт 20% второй аттестации. Quiz 2 оценивается отдельно.</p>"
+      "EN": "<p><a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template → Create a new repository</a>, then clone your copy.</p><ol><li>Choose a language in submission.json.</li><li>Commit your source, own tests and English ANALYSIS.md.</li><li>Run local checks and make sure Public checks pass for your commit.</li><li>Submit the exact commit URL in Moodle Online text. An Actions run URL is optional.</li><li>For a private repository, give the instructor access. Click Submit assignment and verify the status.</li></ol><p>In ANALYSIS.md, acknowledge sources and AI assistance, their contribution and your verification. Approved extensions are recorded in Moodle.</p><p><a href=\"https://lms.astanait.edu.kz/mod/assign/view.php?id=95272\">Submit Assignment 4 in Moodle</a>. Opens 29 October 2026; deadline and cutoff 8 November 2026, 23:59. Practical 50 + defence 50 = 100; A4 contributes 20% of the second attestation. Quiz 2 is separate.</p>",
+      "RU": "<p><a href=\"https://github.com/RZhaniya/daa-assignment-4-archive/generate\">Use this template → Create a new repository</a>, затем клонируйте свою копию.</p><ol><li>Выберите язык в submission.json.</li><li>Добавьте исходники, собственные тесты и английский ANALYSIS.md в коммит.</li><li>Запустите локальные проверки и дождитесь успешного результата Public checks в GitHub Actions.</li><li>Сдайте ссылку точного коммита в Moodle Online text. Actions run URL — по желанию.</li><li>Для закрытого репозитория предоставьте доступ преподавателю. Нажмите Submit assignment и проверьте статус.</li></ol><p>В ANALYSIS.md укажите источники и ИИ, их вклад и свою проверку. Согласованные продления указаны в Moodle.</p><p><a href=\"https://lms.astanait.edu.kz/mod/assign/view.php?id=95272\">Сдать Assignment 4 в Moodle</a>. Начало 29 октября 2026; дедлайн и окончание приёма — 8 ноября 2026, 23:59. Практика 50 + защита 50 = 100; A4 даёт 20% второй аттестации. Quiz 2 оценивается отдельно.</p>"
     },
     "lab": null
   },
   {
     "id": "sources",
     "title": {
-      "EN": "Read with the right conventions",
-      "RU": "Материалы и соглашения"
+      "EN": "Course materials",
+      "RU": "Материалы курса"
     },
     "lead": {
       "EN": "Syllabus weeks 8–10 and the corresponding course lectures.",
       "RU": "Недели 8–10 силлабуса и соответствующие лекции курса."
     },
     "body": {
-      "EN": "<p>The course syllabus and lectures are the source of the required topics. Lecture 8 covers DP patterns; the Lecture 9 file covers KMP/hash; Lecture 10 covers suffix arrays/Kasai/Aho. Use the course-provided textbook access.</p><p>Two conventions matter: LCS prefix lengths compare a[i−1]/b[j−1], and the A4 suffix output excludes an added sentinel. RK uses deliberate collision examples and exact character verification. <a href=\"LECTURE_CLARIFICATIONS_EN_RU.md\">Read the lecture clarifications</a>.</p><p>This local site contains no copied course textbooks, external tracking or official quiz keys.</p>",
-      "RU": "<p>Темы определены силлабусом и лекциями. Лекция 8 — DP patterns, файл лекции 9 — KMP/hash, лекция 10 — suffix array/Kasai/Aho. Учебники открывайте через предоставленный курсом доступ.</p><p>Два важных соглашения: при LCS по длинам префиксов сравниваются a[i−1]/b[j−1]; суффиксный ответ A4 не включает добавленный sentinel. RK использует учебные коллизии и точную проверку символов. <a href=\"LECTURE_CLARIFICATIONS_EN_RU.md\">Прочитайте уточнения к лекциям</a>.</p><p>В локальном сайте нет скопированных учебников, внешнего отслеживания или официальных ключей защиты.</p>"
+      "EN": "<p>The course syllabus and lectures are the source of the required topics. Lecture 8 covers DP patterns; the Lecture 9 file covers KMP/hash; Lecture 10 covers suffix arrays/Kasai/Aho. Use the course-provided textbook access.</p><p>Two conventions matter: LCS prefix lengths compare a[i−1]/b[j−1], and the A4 suffix output excludes an added sentinel. RK uses deliberate collision examples and exact character verification. <a href=\"LECTURE_CLARIFICATIONS_EN_RU.md\">Read the algorithm notes</a>.</p>",
+      "RU": "<p>Темы определены силлабусом и лекциями. Лекция 8 — DP patterns, файл лекции 9 — KMP/hash, лекция 10 — suffix array/Kasai/Aho. Учебники открывайте через предоставленный курсом доступ.</p><p>Два важных соглашения: при LCS по длинам префиксов сравниваются a[i−1]/b[j−1]; суффиксный ответ A4 не включает добавленный sentinel. RK использует учебные коллизии и точную проверку символов. <a href=\"LECTURE_CLARIFICATIONS_EN_RU.md\">Прочитайте пояснения к алгоритмам</a>.</p>"
     },
     "lab": null
   }

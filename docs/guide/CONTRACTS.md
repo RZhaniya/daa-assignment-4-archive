@@ -1,14 +1,10 @@
 # A4 — request contracts
 
-Version 2.1.0.
-
-
-
 Keep the supplied UTF-8 JSON Lines interface: one request object per input line and one result object per output line. Write only results to stdout. A process may handle consecutive requests with different tasks; reset task state for every request. Strings contain printable ASCII codes 32–126, are case-sensitive and have no Unicode normalization. Spaces and punctuation are ordinary characters.
 
 All character positions, block indices and vertex IDs are zero-based. Required numeric fields in the input/output are integers, not JSON Booleans or fractional numbers. Costs, total weights and occurrence counts must be represented exactly with signed 64-bit-safe integer arithmetic; Python integers are suitable. Preserve input array order where it defines output positions. JSON object-field order is unrestricted. Inputs satisfy the published domain; malformed JSON is not assessed. A different valid optimum is accepted wherever reconstruction is non-unique.
 
-The field signatures below use type notation; the worked examples show literal valid JSON. Each output must contain the required named fields with their stated types, even when only an optimum-value group is being checked. Extra object fields are ignored by the current validators; they are not required.
+The field signatures below use type notation; the worked examples show literal valid JSON. Each output must contain the required named fields with their stated types, even when only an optimum-value group is being checked. Additional object fields are ignored; they are optional.
 
 Complexity bounds concern the algorithm after JSON parsing. Report auxiliary storage separately from input/output storage. For string search n is text length, m is pattern length and z is the number of returned starts; emitting z positions requires at least z output operations. Handle empty inputs explicitly.
 

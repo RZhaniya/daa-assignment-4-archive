@@ -1,8 +1,8 @@
-# A4 — Ungraded learning practice
+# Assignment 4 — defence practice
 
 15 questions · 25 minutes · 10 single-answer + 5 multiple-response.
 
-Separate public learning examples, not the assessed Moodle questions. Each question is worth 1 raw point; raw/15 × 50 is a learning score only. For k correct checkbox options, each correct selection gives 1/k and each wrong selection deducts 1/(2k); floor zero. Selecting all gives 0.25 (k=2) or about 0.67 (k=3).
+Practice questions with answers and explanations. This practice is not graded. Each question is worth 1 raw point; raw/15 × 50 is a learning score only. For k correct checkbox options, each correct selection gives 1/k and each wrong selection deducts 1/(2k); floor zero. Selecting all gives 0.25 (k=2) or about 0.67 (k=3).
 
 ## 1. LCS reconstruction
 

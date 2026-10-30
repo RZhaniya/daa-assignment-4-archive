@@ -33,11 +33,10 @@ function render(){
  const s=sections.find(x=>x.id===topic)||sections[0];topic=s.id;
  document.documentElement.lang=lang==='EN'?'en':'ru';
  document.title='A4 · '+s.title[lang];
- $('draft').textContent=tr('A4 · Edition 2.1 · Requirements and submission are in Moodle.','A4 · Редакция 2.1 · Требования и сдача — в Moodle.');
  $('searchLabel').textContent=tr('Explore the lesson','Темы урока');
  $('search').placeholder=tr('Search topics…','Поиск по темам…');
- $('asideNote').textContent=tr('Weeks 8–10 · Eight small models and an ungraded 15-question / 25-minute practice. The assessed defence is in Moodle.','Недели 8–10 · Восемь малых моделей и тренировка: 15 вопросов / 25 минут. Оцениваемая защита — в Moodle.');
- $('eyebrow').textContent=tr('Assignment 4 · Learning studio','Assignment 4 · Учебная мастерская');
+ $('asideNote').textContent=tr('Weeks 8–10 · Dynamic programming and string search.','Недели 8–10 · Динамическое программирование и поиск строк.');
+ $('eyebrow').textContent='Assignment 4';
  $('title').textContent=s.title[lang];$('lead').textContent=s.lead[lang];$('article').innerHTML=s.body[lang];
  $('downloadsTitle').textContent=tr('Start the assignment','Начать задание');
  $('downloads').innerHTML='<div class="download-links"><a href="https://github.com/RZhaniya/daa-assignment-4-archive">'+esc(tr('Assignment and instructions','Задание и инструкции'))+' ↗</a><a href="https://github.com/RZhaniya/daa-assignment-4-archive/generate">'+esc(tr('Create your repository','Создать репозиторий'))+' ↗</a></div>';
@@ -45,7 +44,7 @@ function render(){
  $('prev').textContent=tr('← Previous','← Назад');$('next').textContent=tr('Next →','Далее →');
  $('prev').disabled=idx===0;$('next').disabled=idx===sections.length-1;
  $('prev').onclick=()=>go(sections[idx-1].id);$('next').onclick=()=>go(sections[idx+1].id);
- $('footer').textContent=tr('A4 · Edition 2.1 · Learning checks do not issue Moodle grades.','A4 · Редакция 2.1 · Учебные проверки не выставляют оценки в Moodle.');
+ $('footer').textContent='Design and Analysis of Algorithms';
  document.querySelectorAll('[data-lang]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.lang===lang));b.onclick=()=>{lang=b.dataset.lang;render();};});
  renderNav();$('lab').hidden=!s.lab;
  if(s.lab){$('lab').innerHTML=`<div class="label">${tr('Predict → check → explain','Прогноз → проверка → разбор')}</div><h2 id="labHeading">${tr('Try a small example','Разберите малый пример')}</h2><div id="model"></div>`;renderLab(s.lab);}

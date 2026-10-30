@@ -1,6 +1,6 @@
 # Assignment 4 — testing
 
-Edition 2.1.0. Use the build/check commands in Assignment_4_EN.md. The starter includes 44 public cases and a repeated mixed batch. They help you find mistakes; they do not replace your own tests, prove the internal method, or cover the full input domain.
+Use the [build/check commands](../Assignment_4_EN.md#build-check-and-submit). The starter includes 44 public cases and a repeated mixed batch. Add your own boundary and stress tests across the full published input domain.
 
 ## Required cases
 
@@ -18,8 +18,8 @@ Test mixed requests within one process to catch stale state. For small inputs us
 
 ## Limits and official grading
 
-Input domains are in CONTRACTS.md. The locally verified official container configuration is 60s compilation, 20s requirement-group batches, 1 CPU, 768 MiB container memory, Java heap≤512 MiB, 128 processes and 8 MiB output. Public launcher compilation is limited to 60s; each public batch and a local --input run are limited to 20s. The launcher uses Java heap 384 MiB locally; the official Java heap limit is 512 MiB. If settings change, do not silently alter an assignment already in progress.
+Input domains are in [Contracts](CONTRACTS.md). Grading limits: 60s compilation, 20s requirement-group batches, 1 CPU, 768 MiB container memory, Java heap≤512 MiB, 128 processes and 8 MiB output. Public launcher compilation is limited to 60s; each public batch and a local --input run are limited to 20s. The launcher uses Java heap 384 MiB locally; the official Java heap limit is 512 MiB.
 
 Each official group runs as one JSONL batch. A process failure, timeout, invalid JSON line, or missing/extra result line can fail every case in that batch. A well-formed incorrect answer fails its own case. Required fields and their types are checked before core/witness/scale semantics; additional object fields are ignored. The repeated public batch also checks mixed tasks; official groups each start a new process and cover one task at a time.
 
-Public checks report feedback; the official grader uses the submitted commit and records its own version. Infrastructure errors stay pending for rerun. No measured benchmark rank determines your score.
+The submitted commit is assessed. Infrastructure failures are investigated and the checks rerun before a final mark is recorded. Benchmark rankings do not affect the mark.
